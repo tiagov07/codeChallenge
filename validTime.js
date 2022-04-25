@@ -24,3 +24,10 @@ function solution(time) {
 //      if hours < 24 && minutes < 60 {return true} 
 //      return false
 // }
+
+//alternative solution how to pass the string to a int variable
+// func solution(time string) bool {
+//     h,m:=0,0
+//     fmt.Sscanf(time,"%d:%d",&h,&m)
+//     return h < 24 && m < 60    
+// }
