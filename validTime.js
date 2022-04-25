@@ -15,7 +15,7 @@ function solution(time) {
 }
 
 //go solution
-import "strings"
+// import "strings"
 
 // func solution(time string) bool {
 //      parts := strings.Split(time, ":")
