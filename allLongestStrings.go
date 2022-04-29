@@ -23,4 +23,4 @@ func solution(inputArray []string) []string {
 	return solution
 }
 
-//10
+//9
