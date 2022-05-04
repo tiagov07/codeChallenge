@@ -48,3 +48,19 @@ func solution(a []int, b []int) bool {
 	return false
 
 }
+
+//alternative solution
+func solution(a []int, b []int) bool {
+	c := 0
+	s := make(map[int]bool)
+	for n, _ := range a {
+		if a[n] != b[n] {
+			c++
+			s[a[n]] = true
+			s[b[n]] = true
+		}
+
+	}
+
+	return (c == 2 || c == 0) && (len(s) == 0 || len(s) == 2)
+}
