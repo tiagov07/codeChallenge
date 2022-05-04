@@ -64,3 +64,5 @@ func solution(a []int, b []int) bool {
 
 	return (c == 2 || c == 0) && (len(s) == 0 || len(s) == 2)
 }
+
+//16
