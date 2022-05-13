@@ -21,3 +21,5 @@ func solution(inputString string) bool {
 
 	return count < 2
 }
+
+//18
