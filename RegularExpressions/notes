@@ -1,0 +1,58 @@
+resources https://github.com/falconmasters/expresiones-regulares
+page for checking expressions https://regexr.com/
+
+// = despues del primer slash pondria la coincidencia que quiero encontrar en el texto.
+
+tokens
+
+/./ = poniendo el punto va a encontrar todo menos las nuevas lineas en blanco
+ya que este busca cualquier caracter.
+
+/\d/ = el \d va a buscar todo lo que sea un dijito
+
+/\D/ = el \D me va a excluir cualquier dijito, me va a trater todo menos los numeros.
+
+/\w/ = me va a buscar todo lo que sea un caracter de palabra ya sea en mayuscula
+o minuscula, tambien el guion bajo.
+
+/\W/ = nos va a traer todo lo que no sea un caracter de palabra, los espaciados,
+la tabulacion, los puntos, slashes //, : etc.
+
+/\s/ = para traer todo lo que es un espacio
+
+/\S/ = para traer todo lo que es espacio
+
+^ = con esto indicamos que la coincidencia debe estar al inicio de la linea
+
+$ = con esto indicamos que la coincidencia debe estar al final de la linea
+
+cuantificadores :
+
+- = 0 o mas caracteres
+
+* = 1 o mas caracteres
+
+? = 0 o un caracter que se encuentre cero o mas veces (es un comodin)
+
+{3} = numero exacto
+
+{3,4} = rango de numeros (minimo, maximo)
+
+conjunto de caracteres:
+
+[] = caracteres dentro de losbrackets
+
+[^ ] = caracteres que no estan dentro de los brackets
+
+grupos:
+
+( )
+
+banderas :
+
+- g : indica que es una busqueda global, en todo el documento
+  si no se la ponemos a la primer coincidencia la busqueda va a parar.
+
+- i : indica que tenga en cuenta tanto mayusculas como minusculas a la hora de buscar coincidencias.
+
+- m : multilinea
