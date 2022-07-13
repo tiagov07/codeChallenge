@@ -17,3 +17,35 @@
 
 // Let's say that there are 4 students, and the second one can't tell left from right. In this case, only after the
 // second, third and fifth commands will the students face the same direction.
+
+function solution(commands) {
+    sum = 0
+    same = true
+    for (let i = 0 ; i < commands.length ; i ++) {
+        same = (!same && commands[i] != "A") || (same && commands[i] === "A")
+        if (same) {
+           sum++ 
+        }
+    }
+    return sum
+
+}
+
+//go solution
+func solution(commands string) int {
+	cnt := 0
+	same := true
+	for _, c := range commands {
+		switch c {
+		case 'L':
+			same = !same
+		case 'R':
+			same = !same
+		case 'A':
+		}
+		if same {
+			cnt++
+		}
+	}
+	return cnt
+}
